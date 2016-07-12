@@ -1,0 +1,144 @@
+\documentclass[handout]{beamer}
+%%%%%%%%%%%%%%%%%%%%%%%%%% DO NOT MODIFY %%%%%%%%%%%%%%%%%%%%%%%%%
+%% preamble
+\usetheme{Madrid}
+\mode<presentation>
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage[T1]{fontenc}
+
+\defbeamertemplate*{footline}{shadow theme}{%
+  \leavevmode%
+  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2ex,dp=1ex,leftskip=.3cm plus1fil,rightskip=.3cm]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\hfill\insertshortauthor
+  \end{beamercolorbox}%
+
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2ex,dp=1ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+\AtBeginSection[]{
+  \begin{frame}[allowframebreaks]{Contenido}
+  \small{\tableofcontents[currentsection]}
+  \end{frame}
+}
+
+\AtBeginSubsection[]{
+  \begin{frame}[allowframebreaks]{Contenido}
+    \small{\tableofcontents[currentsubsection]}
+  \end{frame}
+}
+\beamertemplatenavigationsymbolsempty 
+\usefonttheme[onlymath]{serif}
+
+\lstdefinestyle{customHTML}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  language=HTML,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{blue},
+  commentstyle=\itshape\color{gray},
+  identifierstyle=\color{black},
+  stringstyle=\color{orange},
+}
+\lstset{escapechar=@,style=customHTML}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% END DO NOT MODIFY %%%%%%%%%%%%%%%%%%%%
+
+\title{Introducción a la Programación}
+\subtitle{Ejercicios Estructuras de repetición}
+\author{Edwin Salvador}
+\date{12 de julio de 2016}
+\begin{document}
+  \begin{frame}
+    \titlepage
+    \centerline{Clase 13}
+  \end{frame}
+  
+  \AtBeginSection[]{
+    \begin{frame}[allowframebreaks]{Contenido}
+      \tableofcontents[currentsection]
+    \end{frame}
+  }
+
+\section{Contador} % (fold)
+\label{sec:contador}
+\begin{frame}[fragile]\frametitle{Contador}
+    
+Una variable cuyo valor se irá incrementando manualmente.
+
+\begin{lstlisting}
+x = x + 1;    
+\end{lstlisting}
+Ejemplo: Si \texttt{x} es 2, luego de hacer \texttt{x = x + 1;} el valor de \texttt{x} será 3.
+
+\end{frame}
+
+\begin{frame}[t]\frametitle{Ejercicio}
+    
+Resolver el problema utilizando un \texttt{while} con un contador.
+
+Mostrar por pantalla los primeros n números naturales considerando al 0 (cero) como primer número natural.
+
+\end{frame}
+% section contador (end)
+
+\section{Acumulador} % (fold)
+\label{sec:acumulador}
+\begin{frame}[fragile]\frametitle{Acumulador}
+    
+Variable cuyo valor iremos incrementando en cantidades variables dentro de un ciclo de repetición. 
+\begin{lstlisting}
+    x = x + n;
+\end{lstlisting}
+
+\end{frame}
+
+\begin{frame}[t]\frametitle{Ejercicio}
+    
+Determinar la sumatoria de los elementos de un conjunto de valores numéricos. Los números se ingresarán por teclado. Se ingresará un cero para  finalizar.
+
+
+\end{frame}
+% section acumulador (end)
+
+\section{Ejercicios} % (fold)
+\label{sec:ejercicios}
+
+\begin{frame}[t]\frametitle{Ejercicio}
+    
+Se ingresa un valor numérico por consola, determinar e informar si se trata de un número primo o no.
+
+\end{frame}
+
+\begin{frame}[t]\frametitle{Ejercicio}
+    
+Dado un conjunto de valores numéricos indicar cuál es el mayor. El ingreso de datos  finaliza con la llegada de un cero.
+
+\end{frame}
+% section ejercicios (end)
+
+\section{Deber} % (fold)
+\label{sec:deber}
+\begin{frame}[t]\frametitle{Deber}
+    
+\begin{itemize}
+    \item Determinar el menor valor de un conjunto de números e indicar también su posición relativa dentro del mismo. El ingreso de datos finaliza con la llegada de un cero. El programa debe presentar el número menor y la posición cuando se termina de ingresar los números.
+    \item Desarrollar un algoritmo que muestre los primeros n números primos siendo n un valor que debe ingresar el usuario.
+    \item Dado un conjunto de valores numéricos que se ingresan por teclado determinar el valor promedio. El  n de datos se indicará ingresando un valor igual a cero.
+\end{itemize}
+
+
+\end{frame}
+% section deber (end)
+
+\end{document}

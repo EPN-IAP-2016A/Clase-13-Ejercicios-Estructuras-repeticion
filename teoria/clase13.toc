@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Contador}{2}{0}{1}
+\beamer@sectionintoc {2}{Acumulador}{5}{0}{2}
+\beamer@sectionintoc {3}{Ejercicios}{8}{0}{3}
+\beamer@sectionintoc {4}{Deber}{11}{0}{4}

@@ -1,0 +1,7 @@
+\frametitle{Acumulador}
+
+Variable cuyo valor iremos incrementando en cantidades variables dentro de un ciclo de repetición.
+\begin{lstlisting}
+    x = x + n;
+\end{lstlisting}
+
